@@ -1,0 +1,23 @@
+build instruction is on http://www.ffmpeg.org/platform.html
+chapter : 4.2 Microsoft Visual C++ or Intel C++ Compiler for Windows
+
+
+regarding zlib
+
+zlib.lib, zconf.h, and zlib.h are already built in this folder/
+
+to link the library to vs2010
+런타임 라이브러리 	: 다중 쓰레드 디버그
+
+링커 => 입력 => 추가 종속성
+link
+libavcodec.a
+libavformat.a
+libavutil.a
+zlib.lib
+Ws2_32.lib
+
+특정 기본 라이브러리 무시.
+LIBCMTD.lib
+
+
