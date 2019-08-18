@@ -1,0 +1,14 @@
+prefix=./out/armlinux
+exec_prefix=${prefix}
+libdir=./out/armlinux/lib
+includedir=./out/armlinux/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.31.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil -pthread -lm
+Libs.private: 
+Cflags: -I${includedir}
